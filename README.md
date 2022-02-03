@@ -4,8 +4,7 @@
 
 [![PyPI release](https://img.shields.io/pypi/v/autohooks-plugin-pytest.svg)](https://pypi.org/project/autohooks-plugin-pytest/)
 
-An [autohooks](https://github.com/greenbone/autohooks) plugin for python code
-linting via [pytest](https://github.com/PyCQA/pytest).
+An [autohooks](https://github.com/greenbone/autohooks) plugin for [pytest](https://github.com/pytest-dev/pytest/).
 
 ## Installation
 

@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Greenbone Networks GmbH
+# Copyright (C) 2021-2022 Greenbone Networks GmbH
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
@@ -27,7 +27,7 @@ DEFAULT_ARGUMENTS = ["-ra", "--color=yes", "-q"]
 
 def _check_pytest_installed():
     try:
-        import pytest  # noqa: F401
+        import pytest  # pylint: disable=import-outside-toplevel, disable=unused-import
     except ImportError as e:
         raise Exception(
             "Could not find pytest. Please add pytest to your python "
@@ -58,7 +58,7 @@ def _get_pytest_arguments(config):
     return arguments
 
 
-def precommit(config=None, **kwargs):
+def precommit(config=None, **kwargs):  # pylint: disable=unused-argument
     """Precommit hook for running tests with pytest."""
     _check_pytest_installed()
 

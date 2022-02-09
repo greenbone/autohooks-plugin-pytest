@@ -51,7 +51,7 @@ autohooks = "^21.3.0"
 autohooks-plugin-black = "^21.2.0"
 autohooks-plugin-pylint = "^21.2.0"
 pylint = "^2.4.4"
-black = "^21.5b1"
+black = "^22.1"
 isort = "^5.8.0"
 autohooks-plugin-isort = "^1.0.0"
 

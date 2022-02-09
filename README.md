@@ -13,10 +13,7 @@ An [autohooks](https://github.com/greenbone/autohooks) plugin for [pytest](https
 You can install the latest stable release of autohooks-plugin-pytest from the
 Python Package Index using [pip](https://pip.pypa.io/):
 
-    pip install autohooks-plugin-pytest
-
-Note the `pip` refers to the Python 3 package manager. In a environment where
-Python 2 is also available the correct command may be `pip3`.
+    python3 -m pip install autohooks-plugin-pytest
 
 ### Install using poetry
 
@@ -38,7 +35,7 @@ pre-commit = ["autohooks.plugins.pytest"]
 
 By default, autohooks plugin pytest checks all files with a *.py* ending. If
 only files in a sub-directory or files with different endings should be
-formatted, just add the following setting:
+tested, just add the following setting:
 
 ```toml
 [tool.autohooks]

@@ -7,7 +7,7 @@ license = "AGPL-3.0-or-later"
 
 [tool.poetry]
 name = "autohooks-plugin-pytest"
-version = "22.6.0"
+version = "22.6.1.dev1"
 description = "An autohooks plugin for pytest" 
 license = "GPL-3.0-or-later"
 authors = ["Greenbone Networks GmbH <info@greenbone.net>"]

@@ -41,7 +41,7 @@ keywords = [
 [tool.poetry.dependencies]
 python = "^3.7"
 flake8 = "^4.0.1"
-autohooks = "^21.3.0"
+autohooks = ">=21.3,<23.0"
 pytest = "^7.1.2"
 
 [tool.poetry.dev-dependencies]

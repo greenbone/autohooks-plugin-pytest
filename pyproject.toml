@@ -8,7 +8,7 @@ license = "AGPL-3.0-or-later"
 [tool.poetry]
 name = "autohooks-plugin-pytest"
 version = "22.6.1.dev1"
-description = "An autohooks plugin for pytest" 
+description = "An autohooks plugin for pytest"
 license = "GPL-3.0-or-later"
 authors = ["Greenbone Networks GmbH <info@greenbone.net>"]
 readme = "README.md"
@@ -40,18 +40,15 @@ keywords = [
 
 [tool.poetry.dependencies]
 python = "^3.7"
-flake8 = ">=4.0.1,<6.0.0"
-autohooks = ">=21.3,<23.0"
+flake8 = ">=4.0.1"
+autohooks = ">=21.3"
 pytest = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
-autohooks-plugin-black = "^22.7.0"
-autohooks-plugin-pylint = "^21.2.0"
-pylint = "^2.13.9"
-black = "^22.6"
-isort = "^5.8.0"
-pontos = "^22.7.2"
-autohooks-plugin-isort = "^22.3.0"
+pontos = ">=22.7.2"
+autohooks-plugin-black = ">=22.7.0"
+autohooks-plugin-pylint = ">=21.2.0"
+autohooks-plugin-isort = ">=22.3.0"
 
 [tool.black]
 line-length = 79

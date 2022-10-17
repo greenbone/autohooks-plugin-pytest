@@ -19,13 +19,15 @@
 
 import subprocess
 import sys
+from typing import Iterable, List, Union
 
 from autohooks.api import error, ok, out
+from autohooks.config import AutohooksConfig
 
 DEFAULT_ARGUMENTS = ["-ra", "--color=yes", "-q"]
 
 
-def _check_pytest_installed():
+def _check_pytest_installed() -> None:
     try:
         import pytest  # pylint: disable=import-outside-toplevel, disable=unused-import
     except ImportError as e:
@@ -35,18 +37,18 @@ def _check_pytest_installed():
         ) from e
 
 
-def _get_pytest_config(config):
+def _get_pytest_config(config: AutohooksConfig) -> AutohooksConfig:
     return config.get("tool").get("autohooks").get("plugins").get("pytest")
 
 
-def _ensure_iterable(value):
+def _ensure_iterable(value: Union[str, List[str]]) -> List[str]:
     if isinstance(value, str):
         return [value]
 
     return value
 
 
-def _get_pytest_arguments(config):
+def _get_pytest_arguments(config: AutohooksConfig) -> Iterable[str]:
     if not config:
         return DEFAULT_ARGUMENTS
 
@@ -58,7 +60,10 @@ def _get_pytest_arguments(config):
     return arguments
 
 
-def precommit(config=None, **kwargs):  # pylint: disable=unused-argument
+def precommit(
+    config: AutohooksConfig = None,
+    **kwargs,  # pylint: disable=unused-argument
+) -> int:
     """Precommit hook for running tests with pytest."""
     _check_pytest_installed()
 

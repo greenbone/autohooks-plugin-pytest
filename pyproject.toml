@@ -46,6 +46,7 @@ autohooks = ">=21.3"
 pytest = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
+mypy = ">=0.981"
 pontos = ">=22.7.2"
 autohooks-plugin-black = ">=22.7.0"
 autohooks-plugin-pylint = ">=21.2.0"
@@ -74,3 +75,6 @@ pre-commit = [
 
 [tool.pontos.version]
 version-module-file = "autohooks/plugins/pytest/__version__.py"
+
+[tool.mypy]
+ignore_missing_imports = true

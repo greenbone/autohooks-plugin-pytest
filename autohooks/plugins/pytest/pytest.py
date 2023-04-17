@@ -19,7 +19,7 @@
 
 import subprocess
 import sys
-from typing import Iterable, List, Union, Optional
+from typing import Iterable, List, Optional, Union
 
 from autohooks.api import error, ok, out
 from autohooks.config import Config
@@ -31,7 +31,7 @@ def _check_pytest_installed() -> None:
     try:
         import pytest  # pylint: disable=import-outside-toplevel, disable=unused-import
     except ImportError as e:
-        raise Exception(
+        raise RuntimeError(
             "Could not find pytest. Please add pytest to your python "
             "environment"
         ) from e

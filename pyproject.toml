@@ -51,6 +51,7 @@ pontos = ">=22.7.2"
 autohooks-plugin-black = ">=22.7.0"
 autohooks-plugin-pylint = ">=21.2.0"
 autohooks-plugin-isort = ">=22.3.0"
+coverage = "^7.2.3"
 
 [tool.black]
 line-length = 79

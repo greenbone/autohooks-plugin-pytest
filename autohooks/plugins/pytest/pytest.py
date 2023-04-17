@@ -15,7 +15,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-"""Provides precommit function for pytest autohook plugin."""
+"""Provides precommit function for pytest autohooks plugin."""
 
 import subprocess
 import sys

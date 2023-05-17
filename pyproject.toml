@@ -75,4 +75,5 @@ pre-commit = [
 version-module-file = "autohooks/plugins/pytest/__version__.py"
 
 [tool.mypy]
+files = "autohooks"
 ignore_missing_imports = true

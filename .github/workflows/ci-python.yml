@@ -37,7 +37,7 @@ jobs:
           python-version: "3.10"
           cache: "true"
           token: ${{ secrets.CODECOV_TOKEN }}
-          test-command: "poetry run python -m pytest -v"
+          test-command: "python -m pytest -v"
 
   versioning:
     name: Check versioning

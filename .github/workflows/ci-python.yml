@@ -21,6 +21,7 @@ jobs:
     with:
       lint-packages: autohooks tests
       python-version: ${{ matrix.python-version }}
+      test-command: "poetry run python -m pytest -v"
 
 
   codecov:

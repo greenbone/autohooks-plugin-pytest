@@ -34,7 +34,7 @@ autohooks = ">=21.3"
 pytest = ">=7.1.2"
 
 [tool.poetry.dev-dependencies]
-pontos = ">=22.7.2"
+pontos = ">=26.8.4"
 autohooks-plugin-black = ">=22.7.0"
 autohooks-plugin-pylint = ">=21.2.0"
 autohooks-plugin-isort = ">=22.3.0"

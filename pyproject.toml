@@ -34,12 +34,12 @@ autohooks = ">=21.3"
 pytest = ">=7.1.2"
 
 [tool.poetry.dev-dependencies]
-pontos = ">=26.9.0"
+pontos = ">=26.9.2"
 autohooks-plugin-black = ">=22.7.0"
 autohooks-plugin-pylint = ">=21.2.0"
 autohooks-plugin-isort = ">=22.3.0"
 autohooks-plugin-mypy = ">=22.7.0"
-coverage = ">=7.16.1"
+coverage = ">=7.16.2"
 
 [tool.black]
 line-length = 79

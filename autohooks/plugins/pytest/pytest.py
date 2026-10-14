@@ -62,7 +62,7 @@ def _get_pytest_arguments(config: Optional[Config]) -> Iterable[str]:
 
 def precommit(
     config: Optional[Config] = None,
-    **kwargs,  # pylint: disable=unused-argument
+    **_kwargs,
 ) -> int:
     """Precommit hook for running tests with pytest."""
     _check_pytest_installed()

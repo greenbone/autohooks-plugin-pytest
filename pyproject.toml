@@ -17,11 +17,11 @@ classifiers = [
   "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Environment :: Console",
   "Intended Audience :: Developers",
-  "Programming Language :: Python :: 3.10",
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12",
   "Programming Language :: Python :: 3.13",
   "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
   "Operating System :: OS Independent",
   "Topic :: Software Development :: Libraries :: Python Modules",
 ]
@@ -29,7 +29,7 @@ packages = [{ include = "autohooks" }]
 keywords = ["git", "formatting", "linting", "hooks", "pytest"]
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "^3.11"
 autohooks = ">=21.3"
 pytest = ">=7.1.2"
 
@@ -43,7 +43,7 @@ coverage = ">=7.16.2"
 
 [tool.black]
 line-length = 79
-target-version = ["py310", "py311", "py312", "py313", "py314"]
+target-version = ["py311", "py312", "py313", "py314", "py315"]
 exclude = '''
 /(
     \.git
